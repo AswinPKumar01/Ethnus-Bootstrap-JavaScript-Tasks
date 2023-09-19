@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <script src="https://kit.fontawesome.com/9f72516796.js" crossorigin="anonymous"></script>
+  <title>BS TASK 5</title>
+
+</head>
+
+<body class="bg-white">
+
+  <h3 style="margin: 15px 0 15px; text-align: center;"><u>Task 5: Form with feedback</u></h3>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-5 m-auto bg-light py-5">
+        <form action="#" class="needs-validation" novalidate>
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="fn" class="d-flex align-items-center">First Name</label>
+            <span class="input-group-text">
+              <i class="fa fa-user"></i>
+            </span>
+            <input name="fn" type="text" class="form-control" placeholder="First Name" required />
+            <div class="invalid-feedback">Please supply your first name</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="ln" class="d-flex align-items-center">Last Name</label>
+            <span class="input-group-text">
+              <i class="fa fa-user"></i>
+            </span>
+            <input required name="ln" type="text" class="form-control" placeholder="Last Name" />
+            <div class="invalid-feedback">Please supply your last name</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="email" class="d-flex align-items-center">E-Mail</label>
+            <span class="input-group-text">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input required name="email" type="email" class="form-control" placeholder="E-Mail Address" />
+            <div class="invalid-feedback">Please supply your email address</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="phone" class="d-flex align-items-center">Phone #</label>
+            <span class="input-group-text">
+              <i class="fa-solid fa-phone"></i>            </span>
+            <input required name="phone" type="tel" class="form-control" placeholder="(91)999-999-9999" />
+            <div class="invalid-feedback">Please supply your phone number</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="addr" class="d-flex align-items-center">Address</label>
+            <span class="input-group-text">
+              <i class="fa-solid fa-house"></i> </span>
+            <input required name="addr" type="text" class="form-control" placeholder="Address" />
+            <div class="invalid-feedback">Please supply your street address</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="city" class="d-flex align-items-center">City</label>
+            <span class="input-group-text">
+              <i class="fa-solid fa-house"></i> </span>
+            <input required name="city" type="text" class="form-control" placeholder="City" />
+            <div class="invalid-feedback">Please supply your city</div>
+
+          </div>
+
+          <div class="input-group has-validation mb-3">
+            <label style="width: 7em; padding-right: 1em;" for="state" class="d-flex align-items-center">State</label>
+            <span class="input-group-text">
+              <i class="fa-solid fa-list"></i> </span>
+              <select name="state" class="form-control">
+                <option value="" disabled selected>Please select your state</option>
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+                <option value="state3">State 3</option>
+                <option value="state4">State 4</option>
+                <option value="state5">State 5</option>
+              </select>
+          </div>
+          <div style="display: flex;">
+            <div style="width: 7em; padding-right: 1em; display: flex;" class="align-items-center">Do you have hosting ?</div>
+            <div class="pb-2">
+              <div class="form-check">
+                <input required class="form-check-input" name="host" value="yes" type="radio" id="host-yes">
+                <label class="form-check-label" for="host-yes">Yes</label>
+              </div>
+              <div class="form-check">
+                <input required class="form-check-input" name="host" value="no" type="radio" id="host-no">
+                <label class="form-check-label" for="host-no">No</label>
+              </div>
+            </div>
+          </div>   
+          <div class="input-group mb-3 mt-3">
+            <label style="width: 7em; padding-right: 1em;" for="proj" class="text-center">Project Description</label>
+            <span class="input-group-text">
+              <i class="fa-sharp fa-solid fa-pencil"></i></span>
+            <textarea name="proj" class="form-control" cols="30" rows="2" placeholder="Project Description"></textarea>
+          </div>
+          <div style="text-align: center;">
+            <button type="submit" class="bg-warning" style="color: white;  border: 0px; border-radius: 2px;">
+              <span>SEND</span>
+              <i class="fa fa-paper-plane fa-lg"></i>
+            </button>
+          </div>
+        </form>       
+      </div>
+    </div>
+  </div>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+ </body>
+</html>
