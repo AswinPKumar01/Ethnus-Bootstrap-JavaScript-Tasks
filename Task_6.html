@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS TASK 6</title>
+
+    <style>
+        label{
+            font-weight: bold;
+        }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/776e35db5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/776e35db5c.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+  
+    <h3 style="margin: 15px 0 15px; text-align: center;"><u>Task 6: Login page with feedback</u></h3>
+
+    <div
+      class="container"
+      style="width: 35%; background-color: rgb(230, 230, 230)"
+    >
+      <form novalidate class="d-flex flex-column gap-3 mt-5 p-5 ">
+        <div class="in-grp d-flex flex-column gap-0">
+          <label for="name" class="form-label"> Name </label>
+          <input type="text" class="form-control" id="name" required />
+          <div class="invalid-feedback">Name is required</div>
+        </div>
+
+        <div class="in-grp d-flex flex-column gap-0">
+          <label for="email" class="form-label"> Email </label>
+          <input type="email" class="form-control" id="email" required />
+          <div class="invalid-feedback">Email is required</div>
+        </div>
+
+        <div class="in-grp d-flex flex-column gap-0">
+          <label for="pwd" class="form-label"> Password </label>
+          <input type="password" class="form-control" id="pwd" required />
+          <div class="invalid-feedback">Password is required</div>
+        </div>
+
+        <div class="in-grp d-flex flex-column gap-0">
+          <label for="hobby" class="form-label"> Hobbies </label>
+          <select id="hobby" class="form-select" optional>
+            <option value="def" selected>Choose an option</option>
+            <option value="read">Reading Books</option>
+            <option value="watch">Watching Movies</option>
+            <option value="play">Playing Games</option>
+          </select>
+        </div>
+
+        <button class="btn btn-danger text-center text-light">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+        }
+        form.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>
