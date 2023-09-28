@@ -6,6 +6,6 @@
 - Enhancing user experience with attractive navigation bars and ensuring mobile-friendliness and accessibility.
 
 #### The tasks can been accessed through the below link:
-Link: https://aswinpkumar01.github.io/Ethnus-Internship-Tasks/
+https://aswinpkumar01.github.io/Ethnus-Bootstrap-Tasks/
 
 <br/>
