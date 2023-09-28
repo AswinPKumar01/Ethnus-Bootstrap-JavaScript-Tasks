@@ -58,6 +58,26 @@ tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
+.jt thead tr {
+    background-color: #980000;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.jt tbody tr:last-of-type {
+    border-bottom: 4px solid #980000;
+}
+
+.jr a{
+    color:#980000;
+}
+
+.jr:hover {
+    background-color: #e45c5c;
+    font-weight: bolder;
+    color: #980000;
+}
 
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
