@@ -1,4 +1,4 @@
-## 🎯  Phase 2: Bootstrap & Javascript - ""Bootstrapping with a Dash of JavaScript Delight"" 🌠
+## 🎯  Phase 2: Bootstrap & Javascript - "Bootstrapping with a Dash of JavaScript Delight"
 
 ### Current Journey
 
