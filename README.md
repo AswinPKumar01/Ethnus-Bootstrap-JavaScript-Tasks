@@ -1,9 +1,13 @@
-## 🎯  Phase 2: HTML & CSS - "Bootstrapping Towards Stardom" 🌠
+## 🎯  Phase 2: Bootstrap & Javascript - ""Bootstrapping with a Dash of JavaScript Delight"" 🌠
 
 ### Current Journey
 
-- Crafting responsive layouts and styling forms with Bootstrap's grid system and CSS classes.
-- Enhancing user experience with attractive navigation bars and ensuring mobile-friendliness and accessibility.
+- Building responsive layouts with Bootstrap's grid system.
+- Creating attractive navigation bars.
+- Adding interactive elements using JavaScript.
+- Styling forms and input elements.
+- Combining Bootstrap's beauty with JavaScript's brains.
+
 
 #### The tasks can been accessed through the below link:
 https://aswinpkumar01.github.io/Ethnus-Bootstrap-JavaScript-Tasks/
